@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Aimee';
-  src: url('./fonts/Aimee.ttf') format('truetype');
+  src: url('../fonts/Aimee.ttf') format('truetype');
 }
 h1 {
   font-family: 'Aimee', sans-serif;
@@ -90,3 +90,5 @@ a {
   color: white;
   text-decoration: none; 
 }
+
+
