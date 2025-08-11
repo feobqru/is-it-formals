@@ -6,7 +6,7 @@ async function checkFormalDays() {
       const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
       const currentDateFormatted = currentDate.toLocaleDateString('en-GB', options);
       // loads formals days from the JSON file
-      const formalDays = await loadJsonData('formal_days.json');
+      const formalDays = await loadJsonData('../formal_days.json');
   
       // Check if a formal date exists and returns the appropriate message
       if (formalDays[currentDateFormatted]) {
