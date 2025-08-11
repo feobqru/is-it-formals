@@ -38,6 +38,27 @@ h1 {
   text-transform: uppercase;
 }
 
+label {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.5em;
+}
+input[type="checkbox"] {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: #888;
+}
+input[type="checkbox"]:not(:checked) + label {
+  color: white;
+} 
+
 html, body {
   margin: 0;
   padding: 0;
