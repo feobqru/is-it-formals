@@ -34,7 +34,7 @@ task :pull_csv do
   end
 
   # Write the formal days to a JSON file
-  File.open('formal_days.json', 'w') do |f|
+  File.open('docs/js/formal_days.json', 'w') do |f|
     f.write(JSON.pretty_generate(formal_days))
   end
 end

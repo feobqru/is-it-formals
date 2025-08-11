@@ -29,6 +29,12 @@ h1 {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 768px) {
+  .body-text {
+    font-size: 1.25em; 
+  }
+}
+
 .footer-text {
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
@@ -36,6 +42,37 @@ h1 {
   font-style: normal;
   font-size: 1em;
   text-transform: uppercase;
+}
+
+.formals-checklist {
+  color: white; /* White text */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+}
+
+.checklist-item {
+  display: flex;
+  margin: 10px 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.checklist-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.checklist-item span {
+  font-size: 18px;
 }
 
 label {
