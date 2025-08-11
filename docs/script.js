@@ -18,7 +18,7 @@ async function checkFormalDays() {
         }
       }
       // If no formal date exists for today, return a default message
-      return { isFormal: "no", message: "Today is not a formal day." };    
+      return { isFormal: "no", message: "Today is not a formal day" };    
     } catch (error) {
       console.error("Failed to load data:", error);
     }

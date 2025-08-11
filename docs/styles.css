@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Aimee';
+  src: url('./fonts/Aimee.ttf') format('truetype');
+}
+h1 {
+  font-family: 'Aimee', sans-serif;
+  font-weight: 600;
+  font-size: 5em;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.yes-no-maybe {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20em;
+  text-transform: uppercase;
+
+}
+
+.body-text {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+.footer-text {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #1D2EB7; 
+  color: white; 
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+
+footer {
+  text-align: center;
+  padding: 10px; 
+}
+
+a:visited {
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none; 
+}
