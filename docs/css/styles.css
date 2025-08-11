@@ -20,6 +20,12 @@ h1 {
 
 }
 
+@media screen and (max-width: 768px) {
+  .yes-no-maybe {
+    font-size: 10em; 
+  }
+}
+
 .body-text {
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
