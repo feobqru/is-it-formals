@@ -17,8 +17,17 @@ async function checkFormalDays() {
           return { isFormal: "maybe", message: formalDays[currentDateFormatted].name };
         }
       }
-      // If no formal date exists for today, return a default message
-      return { isFormal: "no", message: "Today is not a formal day" };    
+      
+      const formalDates = Object.keys(formalDays).filter(date => formalDays[date].is_formal === "yes");
+        
+
+      // If no formal date exists for today, return next formal date
+      for (const date of formalDates) {
+        const formalDate = new Date(date.split('/').reverse().join('-'));
+        if (formalDate > currentDate) {
+          return { isFormal: "no", message: `The next formal day is on ${formatDateInWords(formalDate)}` };
+        }
+      };    
     } catch (error) {
       console.error("Failed to load data:", error);
     }
@@ -54,3 +63,8 @@ async function loadJsonData(filePath) {
       console.error("Error loading JSON data:", error);
     }
   }
+
+function formatDateInWords(date) {
+  const options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
+  return new Intl.DateTimeFormat('en-GB', options).format(date);
+}
