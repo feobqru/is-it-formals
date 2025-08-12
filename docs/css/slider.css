@@ -99,3 +99,9 @@
 .demo:hover {
   opacity: 1;
 }
+
+img {
+  max-height: 500px; 
+  object-fit: contain; 
+  width: auto; 
+}
