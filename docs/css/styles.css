@@ -135,4 +135,16 @@ a {
   text-decoration: none; 
 }
 
+/* Footer styles, remove bullets and center the links */
+footer nav ul {  
+    list-style: none;
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+}
+
+footer nav ul li {
+    margin-right: 10px; 
+}
 
