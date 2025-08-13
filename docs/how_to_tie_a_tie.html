@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>How to tie a tie - Is It Formals?</title>
+    <title>How to Tie a Tie - Is it Formals?</title>
      <meta name="description" content="Instructions on how to tie a tie with a slideshow guide."> 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/slider.css">
-
-
 </head>
 <body>
     <header>
@@ -19,65 +17,56 @@
       <p class="body-text">Follow these steps to tie a tie</p>
      
       <div class="slideshow-container">
-        <div class="image-slide dots fade">
-          <div class="numbertext">1 / 7</div>
+        <div class="image-slide fade">
+          <div class="numbertext">1 / 6</div>
           <img 
-            src="https://placehold.co/600x400?text=Hello+World" style="width:100%" 
+            src="./images/slide1.webp" style="width:100%" 
             alt="Start with the wide end on the right of your neck, 30 cm lower than the thin side"
             class="dots"
           >
         </div>
 
         <div class="image-slide fade">
-          <div class="numbertext">2 / 7</div>
+          <div class="numbertext">2 / 6</div>
           <img 
-            src="https://placehold.co/600x400?text=Hello+World2" style="width:100%"
+            src="./images/slide2.webp" style="width:100%"
             alt="Cross the wide end over the narrow end"
             class="dots"
           >
         </div>
 
         <div class="image-slide fade">
-          <div class="numbertext">3 / 7</div>
+          <div class="numbertext">3 / 6</div>
           <img 
-            src="https://placehold.co/600x400?text=Hello+World3" style="width:100%"
-            alt="Loop the wide end under the narrow end so it ends up on your right side again"
+            src="./images/slide3.webp" style="width:100%"
+            alt="Loop the wide end under the narrow end and around so to your left side"
             class="dots"
           >
         </div>
         
         <div class="image-slide fade">
-          <div class="numbertext">4 / 7</div>
+          <div class="numbertext">4 / 6</div>
           <img 
-            src="https://placehold.co/600x400?text=Hello+World4" style="width:100%"
-            alt="Loop the wide end back over again"
-            class="dots"
-          >
-        </div>
-
-        <div class="image-slide fade">
-          <div class="numbertext">5 / 7</div>
-          <img 
-            src="https://placehold.co/600x400?text=Hello+World5" style="width:100%"
+            src="./images/slide4.webp" style="width:100%"
             alt="Pull the wide end up through the neck loop"
             class="dots"
           >
         </div>
 
         <div class="image-slide fade">
-          <div class="numbertext">6 / 7</div>
+          <div class="numbertext">5 / 6</div>
           <img 
-            src="https://placehold.co/600x400?text=Hello+World6" style="width:100%"
+            src="./images/slide5.webp" style="width:100%"
             alt="Thread the wide end down through the horizontal front loop you created"
             class="dots"
           >
         </div>
 
         <div class="image-slide fade">
-          <div class="numbertext">7 / 7</div>
-          <img  
-            src="https://placehold.co/600x400?text=Hello+World7" style="width:100%"
-            alt="Tighten the knot by holding the narrow end and sliding the front knot up"
+          <div class="numbertext">6 / 6</div>
+          <img 
+            src="./images/slide6.webp" style="width:100%"
+            alt="Hold the narrow end and slide the knot up to adjust the tie"
             class="dots"
           >
         </div>
@@ -86,47 +75,64 @@
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
+        <!-- Holds the caption -->
         <div class="caption-container">
           <p id="caption"></p>
         </div>
       </div>
-    </div>
+    </main>
                   
     </main>
     <footer class="footer-text"> 
-      <a href="index.html">Home</a>  |
-      <a href="formals_checklist.html">Formals Checklist</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a>  | </li>
+          <li><a href="formals_checklist.html">Formals Checklist</a> </li>
+        </ul>
+      </nav>
     </footer>
-    <script>
-let slideIndex = 1;
-showSlides(slideIndex);
+  <script>
+    let slideIndex = 1;
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    // Show the first slide
+    showSlides(slideIndex);
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+    // Function to change slides using next/prev buttons
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("image-slide");
-  let dots = document.getElementsByClassName("dots");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  // for (i = 0; i < dots.length; i++) {
-  //   dots[i].className = dots[i].className.replace(" active", "");
-  // }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex].alt;
-}
-</script>
-  </body>
+    // Function to set the current slide
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    // Function to show the slides
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("image-slide");
+      let dots = document.getElementsByClassName("dots");
+      let captionText = document.getElementById("caption");
+
+      // Reset the slide index if it exceeds the number of slides
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+
+      // Hide all slides and remove active class from dots
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      // Remove active class from all dots
+      slides[slideIndex - 1].style.display = "block";
+
+      // Set the active class for the current dot
+      dots[slideIndex - 1].className += " active";
+
+      // Update the caption text
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+  </script>
+</body>
 
 </html>
