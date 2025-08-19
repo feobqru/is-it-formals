@@ -3,6 +3,9 @@ require 'rake'
 require 'httparty'
 require 'csv'
 require 'json'
+require 'tilt'
+require 'tilt/erb'
+require 'i18n'
 
 desc "Pulls OLE Calendar CSV files from the OLE server and exetracts the formal days"
 task :pull_csv do
@@ -37,4 +40,24 @@ task :pull_csv do
   File.open('docs/js/formal_days.json', 'w') do |f|
     f.write(JSON.pretty_generate(formal_days))
   end
+end
+
+desc "Generate the HTML files from the ERB templates"
+task :generate_html do
+  I18n.load_path += Dir[File.expand_path("locales") + "/*.yml"]
+  I18n.default_locale = :en 
+  I18n.available_locales = [:en, :mi, :zh]
+  # Generate the index.html file
+  ['en', 'mi', 'zh'].each do |locale|
+    I18n.locale = locale
+    ['index', 'formals_checklist', 'how_to_tie_a_tie'].each do |template_name|
+    template = Tilt::ERBTemplate.new("templates/#{template_name}.html.erb")
+      File.open("docs/#{template_name}-#{locale}.html", 'w') do |f|
+        f.write(template.render(self))
+      end
+    end
+  end
+  FileUtils.cp('docs/index-en.html', 'docs/index.html')
+  FileUtils.cp('docs/formals_checklist-en.html', 'docs/formals_checklist.html')
+  FileUtils.cp('docs/how_to_tie_a_tie-en.html', 'docs/how_to_tie_a_tie.html')
 end

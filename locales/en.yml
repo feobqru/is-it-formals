@@ -1,0 +1,35 @@
+en:
+  # General
+  footer_home: "Home"
+  footer_how_to_tie_a_tie: "Click here to learn how to tie a tie"
+  footer_checklist: "Formals checklist"
+  
+  
+  # Index Page
+  index_title: "Is it Formals?"
+  index_description: "Is It Formals? is an informative web app that tells you if it's a formal day at Saint Kentigern College. It includes a checklist and a guide on how to tie a tie."
+
+  # How to Tie a Tie Page
+  how_to_tie_a_tie_title: "How to Tie a Tie"
+  how_to_tie_a_tie_description: "Insturctions on how to tie a tie, with a slideshow gallery."
+  how_to_tie_a_tie_slide1: "Start with the wide end on the right of your neck, 30 cm lower than the thin side"
+  how_to_tie_a_tie_slide2: "Cross the wide end over the narrow end"
+  how_to_tie_a_tie_slide3: "Loop the wide end under the narrow end and around so to your left side"
+  how_to_tie_a_tie_slide4: "Pull the wide end up through the neck loop"
+  how_to_tie_a_tie_slide5: "Thread the wide end down through the horizontal front loop you created"
+  how_to_tie_a_tie_slide6: "Hold the narrow end and slide the knot up to adjust the tie"
+
+
+  # Formals Checklist Page
+  formals_checklist_title: "Formals Checklist"
+  formals_checklist_description: "A checklist to ensure you have all items required for formal days at Saint Kentigern College."
+  formals_checklist_item1: "White Formals Shirt"
+  formals_checklist_item2: "Formal Pants/Skirt"
+  formals_checklist_item3: "Black Loafers"
+  formals_checklist_item4: "Tie"
+  formals_checklist_item5: "Blazer"
+  formals_checklist_item6: "Belt (Optional)"
+
+  english: "English"
+  maori: "Māori"
+  chinese: "中文"

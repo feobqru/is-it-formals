@@ -1,48 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<%= I18n.locale %>">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Formals Checklist - Is it Formals?</title>
-    <meta name="description" content="A checklist to ensure you have all items required for formal days at Saint Kentigern College.">
+    <title><%= I18n.t('formals_checklist_title') %> - Is it Formals?</title>
+    <meta name="description" content="<%= I18n.t('formals_checklist_description') %>">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Formals Checklist</h1>
+        <h1><%= I18n.t('formals_checklist_title') %></h1>
     </header>
     <div class="formals-checklist">
       <div class="checklist-item">
         <input type="checkbox">
-        <span>White Formals Shirt</span>
+        <span><%= I18n.t('formals_checklist_item1') %></span>
       </div>
       <div class="checklist-item">
         <input type="checkbox">
-        <span>Formal Pants/Skirt</span>
+        <span><%= I18n.t('formals_checklist_item2') %></span>
       </div>
       <div class="checklist-item">
         <input type="checkbox">
-        <span>Black Loafers</span>
+        <span><%= I18n.t('formals_checklist_item3') %></span>
       </div>
       <div class="checklist-item">
         <input type="checkbox">
-        <span>Tie</span>
+        <span><%= I18n.t('formals_checklist_item4') %></span>
       </div>
       <div class="checklist-item">
         <input type="checkbox">
-        <span>Blazer</span>
+        <span><%= I18n.t('formals_checklist_item5') %></span>
       </div>
       <div class="checklist-item">
         <input type="checkbox">
-        <span>Belt (Optional)</span>
+        <span><%= I18n.t('formals_checklist_item6') %></span>
       </div>
     </div> 
     <footer class="footer-text"> 
       <nav>
         <ul>
-          <li><a href="index.html">Home</a> |</li>
-          <li><a href="how_to_tie_a_tie.html">Click here to learn how to tie a tie</a></li>
+          <li><a href="index.html"><%= I18n.t('footer_home') %></a> |</li>
+          <li><a href="how_to_tie_a_tie.html"><%= I18n.t('footer_how_to_tie_a_tie') %></a></li>
         </ul>
       </nav>
     </footer>

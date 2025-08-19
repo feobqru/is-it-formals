@@ -1,0 +1,33 @@
+zh:
+  # General
+  footer_home: "主页"
+  footer_how_to_tie_a_tie: "点击这里学习如何打领带"
+  footer_checklist: "正式服装清单"
+
+  # Index Page
+  index_title: "今天是正式服装日吗？"
+  index_description: "今天是正式服装日吗？是一个信息性网络应用程序，告诉您今天是否是圣肯特学院的正式服装日。它包括一个清单和一个关于如何打领带的指南。"
+
+  # How to Tie a Tie Page
+  how_to_tie_a_tie_title: "如何打领带"
+  how_to_tie_a_tie_description: "关于如何打领带的说明，以及一个幻灯片画廊。"
+  how_to_tie_a_tie_slide1: "从右侧开始，将宽的一端放在脖子右侧，比窄的一端低30厘米"
+  how_to_tie_a_tie_slide2: "将宽的一端交叉在窄的一端上"
+  how_to_tie_a_tie_slide3: "将宽的一端绕到窄的一端下方并绕到左侧"
+  how_to_tie_a_tie_slide4: "将宽的一端从脖子环中拉上来"
+  how_to_tie_a_tie_slide5: "将宽的一端穿过您创建的水平前环"
+  how_to_tie_a_tie_slide6: "握住窄的一端，将结向上滑动以调整领带"
+
+  # Formals Checklist Page
+  formals_checklist_title: "正式服装清单"
+  formals_checklist_description: "一个清单，确保您拥有圣肯特学院正式服装日所需的所有物品。"
+  formals_checklist_item1: "白色正式衬衫"
+  formals_checklist_item2: "正式裤子/裙子"
+  formals_checklist_item3: "黑色便鞋"
+  formals_checklist_item4: "领带"
+  formals_checklist_item5: "西装外套"
+  formals_checklist_item6: "腰带（可选"
+
+  english: "English"
+  maori: "Māori"
+  chinese: "中文"

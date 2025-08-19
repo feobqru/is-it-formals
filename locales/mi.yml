@@ -1,0 +1,33 @@
+mi:
+  # General
+  footer_home: "Kāinga"
+  footer_how_to_tie_a_tie: "Pāwhiritia ki konei ki te ako me pēhea te here i tētahi tāhei"
+  footer_checklist: "Rārangi Taki Formals"
+
+  # Index Page
+  index_title: "He Rā Formals Tēnei?"
+  index_description: "He Rā Formals Tēnei? he taupānga ipurangi e whakamōhio ana mēnā he rā formals i te Kāreti o Hato Kēneti. Kei roto he rārangi taki me tētahi aratohu mō te here tāhei."
+
+  # How to Tie a Tie Page
+  how_to_tie_a_tie_title: "Me Pēhea te Here Tāhei"
+  how_to_tie_a_tie_description: "Ngā tohutohu mō te here tāhei, me tētahi taiwhanga whakaahua."
+  how_to_tie_a_tie_slide1: "Tīmatahia mā te pito whānui kei te taha matau o tō kakī, 30 cm te roa ake i te pito whāiti"
+  how_to_tie_a_tie_slide2: "Whakawhitia te pito whānui ki runga i te pito whāiti"
+  how_to_tie_a_tie_slide3: "Whītikihia te pito whānui ki raro i te pito whāiti, ā, huri ki tō taha mauī"
+  how_to_tie_a_tie_slide4: "Tōia te pito whānui ki runga mā te koropiko o te kakī"
+  how_to_tie_a_tie_slide5: "Whakawhitia te pito whānui ki raro mā te koropiko whakapae i hangaia e koe"
+  how_to_tie_a_tie_slide6: "Puritia te pito whāiti, ā, tōia te kōpaki ki runga hei whakatika i te tāhei"
+
+  # Formals Checklist Page
+  formals_checklist_title: "Rārangi Taki Formals"
+  formals_checklist_description: "He rārangi taki hei whakarite kei a koe ngā mea katoa e hiahiatia ana mō ngā rā formals i te Kāreti o Hato Kēneti."
+  formals_checklist_item1: "Hāte Formals Mā"
+  formals_checklist_item2: "Pūkoro/Pūtuhi Formals"
+  formals_checklist_item3: "Hū Pango"
+  formals_checklist_item4: "Tāhei"
+  formals_checklist_item5: "Pōtae"
+  formals_checklist_item6: "Tātua (Kōwhiringa)"
+
+  english: "English"
+  maori: "Māori"
+  chinese: "中文"

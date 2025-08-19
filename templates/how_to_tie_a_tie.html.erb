@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<%= I18n.locale %>">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>How to Tie a Tie - Is it Formals?</title>
-    <meta name="description" content="Insturctions on how to tie a tie, with a slideshow gallery."> 
+    <title><%= I18n.t('how_to_tie_a_tie_title') %> - Is it Formals?</title>
+    <meta name="description" content="<%= I18n.t('how_to_tie_a_tie_description') %>"> 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/slider.css">
 </head>
 <body>
     <header>
-        <h1>How to Tie a Tie</h1>
+        <h1><%= I18n.t('how_to_tie_a_tie_title') %></h1>
     </header>
     <main>
-      <p class="body-text">Insturctions on how to tie a tie, with a slideshow gallery.</p>
+      <p class="body-text"><%= I18n.t('how_to_tie_a_tie_description') %></p>
      
       <div class="slideshow-container">
         <div class="image-slide fade">
           <div class="numbertext">1 / 6</div>
           <img 
             src="./images/slide1.webp" style="width:100%" 
-            alt="Start with the wide end on the right of your neck, 30 cm lower than the thin side"
+            alt="<%= I18n.t('how_to_tie_a_tie_slide1') %>"
             class="dots"
           >
         </div>
@@ -30,7 +30,7 @@
           <div class="numbertext">2 / 6</div>
           <img 
             src="./images/slide2.webp" style="width:100%"
-            alt="Cross the wide end over the narrow end"
+            alt="<%= I18n.t('how_to_tie_a_tie_slide2') %>"
             class="dots"
           >
         </div>
@@ -39,7 +39,7 @@
           <div class="numbertext">3 / 6</div>
           <img 
             src="./images/slide3.webp" style="width:100%"
-            alt="Loop the wide end under the narrow end and around so to your left side"
+            alt="<%= I18n.t('how_to_tie_a_tie_slide3') %>"
             class="dots"
           >
         </div>
@@ -48,7 +48,7 @@
           <div class="numbertext">4 / 6</div>
           <img 
             src="./images/slide4.webp" style="width:100%"
-            alt="Pull the wide end up through the neck loop"
+            alt="<%= I18n.t('how_to_tie_a_tie_slide4') %>"
             class="dots"
           >
         </div>
@@ -57,7 +57,7 @@
           <div class="numbertext">5 / 6</div>
           <img 
             src="./images/slide5.webp" style="width:100%"
-            alt="Thread the wide end down through the horizontal front loop you created"
+            alt="<%= I18n.t('how_to_tie_a_tie_slide5') %>"
             class="dots"
           >
         </div>
@@ -66,7 +66,7 @@
           <div class="numbertext">6 / 6</div>
           <img 
             src="./images/slide6.webp" style="width:100%"
-            alt="Hold the narrow end and slide the knot up to adjust the tie"
+            alt="<%= I18n.t('how_to_tie_a_tie_slide6') %>"
             class="dots"
           >
         </div>
@@ -86,8 +86,8 @@
     <footer class="footer-text"> 
       <nav>
         <ul>
-          <li><a href="index.html">Home</a>  | </li>
-          <li><a href="formals_checklist.html">Formals checklist</a> </li>
+          <li><a href="index.html"><%= I18n.t('footer_home') %></a>  | </li>
+          <li><a href="formals_checklist.html"><%= I18n.t('footer_checklist') %></a> </li>
         </ul>
       </nav>
     </footer>
