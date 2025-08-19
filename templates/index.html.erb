@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<%= I18n.locale %>">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Is it Formals?</title>   
-    <meta name="description" content="Is It Formals? is an informative web app that tells you if it's a formal day at Saint Kentigern College. It includes a checklist and a guide on how to tie a tie."> 
+    <title><%= I18n.t(:index_title) %></title>   
+    <meta name="description" content="<%= I18n.t(:index_description) %>"> 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,18 +15,18 @@
   <body>
     <nav class="language-selector footer-text">
       <ul>
-        <li><a href="index-en.html">English</a></li>
-        <li><a href="index-mi.html">Māori</a></li>
-        <li><a href="index-zh.html">中文</a></li>
+        <li><a href="index-en.html"><%= I18n.t(:english) %></a></li>
+        <li><a href="index-mi.html"><%= I18n.t(:maori) %></a></li>
+        <li><a href="index-zh.html"><%= I18n.t(:chinese) %></a></li>
       </ul>
     </nav>
 
     <header>
-      <h1>Is it Formals?</h1>
+      <h1><%= I18n.t(:index_title) %></h1>
     </header>
     <main>
       <div id="yes-no-maybe" class="yes-no-maybe"> </div> 
-      <div id="formal-day-message" class="body-text" lang="en"> </div>
+      <div id="formal-day-message" class="body-text" lang="<%= I18n.locale %>"> </div>
     </main>
 
     <script src="js/script.js"></script>
@@ -34,8 +34,8 @@
     <footer class="footer-text"> 
       <nav>
         <ul>
-          <li><a href="formals_checklist.html"> Formals checklist</a> |</li>
-          <li><a href="how_to_tie_a_tie.html"> Formals checklist</a></li>
+          <li><a href="formals_checklist.html"> <%= I18n.t(:footer_checklist) %></a> |</li>
+          <li><a href="how_to_tie_a_tie.html"> <%= I18n.t(:footer_checklist) %></a></li>
         </ul>
       </nav>
     </footer>
